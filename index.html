@@ -3,449 +3,537 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TOTAL BODY FITNESS THEORY | 脳疲労と身体疲労の専門施設｜箕面</title>
-  <meta name="description" content="TOTAL BODY FITNESS THEORY（箕面市如意谷）｜脳疲労・身体疲労に特化。完全予約制／9:00-21:00／不定休。最寄り：箕面萱野駅から徒歩15分。近隣の有料駐車場をご利用ください。" />
-  <link rel="canonical" href="" />
+  <title>Neuro Conditioning | ヘッドセラピー｜脳と神経を整える専門施術｜大阪・箕面</title>
+  <meta name="description" content="頭蓋骨・頸椎・神経にアプローチするヘッドコンディショニング。脳疲労・慢性疲労・不眠・頭痛の根本原因を整える。完全予約制｜大阪・箕面。" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="TOTAL BODY FITNESS THEORY" />
-  <meta property="og:description" content="脳疲労と身体疲労を根本から整える、完全予約制の専門施設（箕面）。" />
-  <meta property="og:image" content="" />
-  <meta property="og:url" content="" />
-
-  <!-- Twitter -->
+  <meta property="og:title" content="Neuro Conditioning | ヘッドセラピー" />
+  <meta property="og:description" content="頭蓋骨・頸椎・神経にアプローチ。脳と身体を整える専門施術。" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="TOTAL BODY FITNESS THEORY" />
-  <meta name="twitter:description" content="脳疲労と身体疲労の専門施設（箕面）。完全予約制／9:00-21:00／不定休。" />
-  <meta name="twitter:image" content="" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <header class="site-header">
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
     <div class="container header-inner">
-      <div class="brand">
-        <span class="logo" aria-hidden="true">TBFT</span>
-        <span class="brand-text">TOTAL BODY FITNESS THEORY</span>
-      </div>
-      <nav class="header-nav" aria-label="サイト内">
-        <a href="#features">特徴</a>
+      <a href="#" class="header-logo">
+        <span class="logo-mark">NC</span>
+        <span class="logo-text">Neuro Conditioning</span>
+      </a>
+      <nav class="header-nav" id="headerNav">
+        <a href="#problems">お悩み</a>
+        <a href="#method">施術内容</a>
         <a href="#therapist">施術者</a>
         <a href="#pricing">料金</a>
-        <a href="#head-therapy">ヘッドセラピー</a>
-        <a href="#flow">施術の流れ</a>
-        <a href="#hours">営業情報</a>
-        <a href="#access">アクセス</a>
-        <a class="btn btn-primary" href="#reserve">予約</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://liff.line.me/2006566038-zQdLGm6N?calendar_salon_id=12280&ts=1772782813" target="_blank" class="btn btn-cta-sm">予約する</a>
       </nav>
+      <button class="hamburger" id="hamburger" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
   <main>
-    <section class="hero">
+
+    <!-- ===== ① HERO ===== -->
+    <section class="hero" id="hero">
+      <canvas id="neuroCanvas" class="hero-canvas"></canvas>
       <div class="container hero-inner">
-        <h1>
-          たった一度で、頭も体も軽く。
-          <span class="sub">脳疲労×身体疲労に同時アプローチする、完全予約制の疲労除去サロン</span>
+        <p class="hero-label">Neuro Conditioning &mdash; Head Therapy</p>
+        <h1 class="hero-title">
+          たった一度で、<br>頭も体も軽く。
         </h1>
-        <div class="badges" role="list">
-          <span class="badge">初回体験あり</span>
-          <span class="badge">最短30〜45分</span>
-          <span class="badge">箕面・完全予約制</span>
-        </div>
+        <p class="hero-sub">
+          頭蓋骨・頸椎・神経にアプローチする<br>
+          <strong>ヘッドコンディショニング</strong>
+        </p>
         <div class="hero-cta">
-          <a class="btn btn-primary btn-lg" href="#reserve">今すぐ予約する</a>
-          <a class="btn btn-ghost" href="#features">特徴を見る</a>
+          <a href="https://liff.line.me/2006566038-zQdLGm6N?calendar_salon_id=12280&ts=1772782813" target="_blank" class="btn btn-primary btn-lg pulse">今すぐ予約する</a>
         </div>
-        <ul class="hero-points" role="list">
-          <li>朝から重い頭・集中力が続かない</li>
-          <li>寝ても抜けない疲れ・体がだるい</li>
-          <li>肩首こりや眼精疲労で仕事がつらい</li>
-        </ul>
+        <div class="hero-badges">
+          <span class="badge">初回限定 ¥5,500</span>
+          <span class="badge">完全予約制</span>
+          <span class="badge">大阪・箕面</span>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
       </div>
     </section>
 
-    <section class="section kpis">
+    <!-- ===== ② 悩みセクション ===== -->
+    <section class="section" id="problems">
       <div class="container">
-        <div class="grid-3 kpi-grid">
-          <div class="kpi"><strong>実感まで</strong><span>即日</span></div>
-          <div class="kpi"><strong>所要時間</strong><span>30〜60分</span></div>
-          <div class="kpi"><strong>料金</strong><span>￥5,500〜</span></div>
+        <h2 class="section-title fade-in">こんなお悩み<br class="sp-only">ありませんか？</h2>
+        <div class="problems-grid">
+          <div class="problem-card fade-in">
+            <div class="problem-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a7 7 0 0 1 7 7c0 2.5-1.5 4.5-3 6l-1 1.5V19a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-2.5L8 15c-1.5-1.5-3-3.5-3-6a7 7 0 0 1 7-7z"/><line x1="10" y1="22" x2="14" y2="22"/></svg>
+            </div>
+            <h3>頭痛</h3>
+            <p>繰り返す頭痛に悩まされている</p>
+          </div>
+          <div class="problem-card fade-in">
+            <div class="problem-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/></svg>
+            </div>
+            <h3>眼精疲労</h3>
+            <p>目の奥が重く、かすんで見える</p>
+          </div>
+          <div class="problem-card fade-in">
+            <div class="problem-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h3>自律神経の乱れ</h3>
+            <p>原因不明の不調が続く</p>
+          </div>
+          <div class="problem-card fade-in">
+            <div class="problem-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 18a5 5 0 0 0-10 0"/><line x1="12" y1="2" x2="12" y2="9"/><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"/><line x1="1" y1="18" x2="3" y2="18"/><line x1="21" y1="18" x2="23" y2="18"/><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"/><line x1="23" y1="22" x2="1" y2="22"/></svg>
+            </div>
+            <h3>不眠</h3>
+            <p>寝ても疲れが取れない</p>
+          </div>
+          <div class="problem-card fade-in">
+            <div class="problem-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18.364 5.636a9 9 0 0 1 0 12.728M5.636 18.364a9 9 0 0 1 0-12.728"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3>慢性疲労</h3>
+            <p>身体が常にだるく重い</p>
+          </div>
+          <div class="problem-card fade-in">
+            <div class="problem-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>首こり・肩こり</h3>
+            <p>デスクワークで常に張っている</p>
+          </div>
+          <div class="problem-card fade-in">
+            <div class="problem-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3>ストレス</h3>
+            <p>心身の緊張が抜けない</p>
+          </div>
+        </div>
+        <p class="problems-note fade-in">これらの不調、実は<strong>「脳と神経」</strong>が原因かもしれません。</p>
+      </div>
+    </section>
+
+    <!-- ===== ③ なぜ起きるのか ===== -->
+    <section class="section section-dark" id="cause">
+      <div class="container">
+        <h2 class="section-title fade-in">なぜ不調が起きるのか？</h2>
+        <p class="section-lead fade-in">
+          多くの身体の不調は<br>
+          <strong>脳疲労と神経バランスの乱れ</strong>によって起こります。
+        </p>
+        <div class="cause-flow fade-in">
+          <div class="cause-node">
+            <div class="cause-circle">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a7 7 0 0 1 7 7c0 2.5-1 5-3 7-1 1-1 2-1 3h-6c0-1 0-2-1-3-2-2-3-4.5-3-7a7 7 0 0 1 7-7z"/><path d="M9 22h6"/></svg>
+            </div>
+            <span>脳</span>
+            <p>情報過多・ストレスで<br>常に緊張状態</p>
+          </div>
+          <div class="cause-arrow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+          </div>
+          <div class="cause-node">
+            <div class="cause-circle">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <span>神経</span>
+            <p>自律神経が乱れ<br>回復力が低下</p>
+          </div>
+          <div class="cause-arrow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+          </div>
+          <div class="cause-node">
+            <div class="cause-circle">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <span>身体</span>
+            <p>頭痛・疲労・不眠<br>として症状が出る</p>
+          </div>
+        </div>
+        <div class="cause-insight fade-in">
+          <p>身体の不調の原因は<strong>「身体」</strong>ではなく<br><strong>「脳と神経」</strong>にあります。</p>
         </div>
       </div>
     </section>
 
-    <section id="features" class="section">
+    <!-- ===== ④ 解決方法 ===== -->
+    <section class="section" id="method">
       <div class="container">
-        <h2>選ばれる理由</h2>
-        <div class="grid-3">
-          <div class="card">
-            <h3>脳疲労 × 身体疲労</h3>
-            <p>思考のモヤや集中力低下、体の重だるさまで。相互に影響する疲労を同時に整え、日常のパフォーマンスを取り戻します。</p>
+        <h2 class="section-title fade-in">ヘッドコンディショニングとは</h2>
+        <p class="section-lead fade-in">
+          頭蓋骨・頸椎・神経にアプローチし、<br>
+          脳の緊張を解放する専門施術です。
+        </p>
+        <div class="method-targets fade-in">
+          <div class="method-target">
+            <div class="target-circle">頭蓋骨</div>
+            <p>頭部の緊張を解放</p>
           </div>
-          <div class="card">
-            <h3>完全予約制</h3>
-            <p>周りを気にせず過ごせるプライベート空間。あなたに最適化した時間設計で、効率よく回復へ導きます。</p>
+          <div class="method-connector"></div>
+          <div class="method-target">
+            <div class="target-circle">頸椎</div>
+            <p>首の歪みを調整</p>
           </div>
-          <div class="card">
-            <h3>タイパ・コスパ重視</h3>
-            <p>最短で実感しやすい導線とシンプルな選択肢。忙しい日々でも無理なく続けられる疲労ケアをご提供します。</p>
+          <div class="method-connector"></div>
+          <div class="method-target">
+            <div class="target-circle">神経</div>
+            <p>自律神経を整える</p>
+          </div>
+        </div>
+        <div class="method-effects fade-in">
+          <div class="effect-card">
+            <div class="effect-number">01</div>
+            <h3>頭が軽くなる</h3>
+            <p>脳の緊張が解放され、思考がクリアに</p>
+          </div>
+          <div class="effect-card">
+            <div class="effect-number">02</div>
+            <h3>身体が軽くなる</h3>
+            <p>神経バランスが整い、全身の緊張が緩和</p>
+          </div>
+          <div class="effect-card">
+            <div class="effect-number">03</div>
+            <h3>集中力が向上</h3>
+            <p>パフォーマンスが本来の状態に戻る</p>
+          </div>
+        </div>
+        <p class="method-note fade-in">ただのリラクゼーションではなく、<strong>身体が本来持っている回復力</strong>を引き出す施術です。</p>
+      </div>
+    </section>
+
+    <!-- ===== ⑤ 選ばれる理由 ===== -->
+    <section class="section section-dark" id="reasons">
+      <div class="container">
+        <h2 class="section-title fade-in">選ばれる<span class="accent">3つ</span>の理由</h2>
+        <div class="reasons-grid">
+          <div class="reason-card fade-in">
+            <div class="reason-number">01</div>
+            <h3>神経コンディショニング</h3>
+            <p>ただ揉むだけではない。脳神経の働きを整え、身体全体のバランスを根本から調整します。</p>
+          </div>
+          <div class="reason-card fade-in">
+            <div class="reason-number">02</div>
+            <h3>西洋医学 × 東洋医学</h3>
+            <p>解剖学・神経学・カイロプラクティック・経絡。多角的な視点から身体を分析し、最適な施術を提供します。</p>
+          </div>
+          <div class="reason-card fade-in">
+            <div class="reason-number">03</div>
+            <h3>完全予約制プライベート空間</h3>
+            <p>あなたのためだけの空間と時間。周りを気にせず、最高のコンディショニングを受けられます。</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section offer">
+    <!-- ===== ⑥ 施術の流れ ===== -->
+    <section class="section" id="flow">
       <div class="container">
-        <h2>はじめての方へ</h2>
-        <div class="offer-box">
-          <p class="offer-lead">いま感じている「だるさ」「重さ」を、まずは一度で軽く。</p>
-          <ul class="list" role="list">
-            <li>脳のモヤと体の張りを同時にリリース</li>
-            <li>着替え不要・短時間で負担少なく</li>
-            <li>忙しくても続けやすいシンプル設計</li>
+        <h2 class="section-title fade-in">施術の流れ</h2>
+        <div class="flow-timeline">
+          <div class="flow-item fade-in">
+            <div class="flow-step">01</div>
+            <div class="flow-content">
+              <h3>カウンセリング</h3>
+              <p>生活リズム・睡眠状況・身体の不調を丁寧にヒアリング。目的を明確にします。</p>
+            </div>
+          </div>
+          <div class="flow-item fade-in">
+            <div class="flow-step">02</div>
+            <div class="flow-content">
+              <h3>コンディショニングチェック</h3>
+              <p>姿勢・可動域・神経反応を確認。脳疲労の兆候と身体のバランスを見極めます。</p>
+            </div>
+          </div>
+          <div class="flow-item fade-in">
+            <div class="flow-step">03</div>
+            <div class="flow-content">
+              <h3>施術</h3>
+              <p>頭蓋骨・頸椎・神経にピンポイントでアプローチ。力任せにしない繊細な施術です。</p>
+            </div>
+          </div>
+          <div class="flow-item fade-in">
+            <div class="flow-step">04</div>
+            <div class="flow-content">
+              <h3>セルフケア提案</h3>
+              <p>日常で続けられるシンプルなケアをご提案。効果の持続をサポートします。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ⑦ ビフォーアフター ===== -->
+    <section class="section section-dark" id="before-after">
+      <div class="container">
+        <h2 class="section-title fade-in">施術前後の変化</h2>
+        <div class="ba-grid fade-in">
+          <div class="ba-card ba-before">
+            <div class="ba-label">Before</div>
+            <h3>施術前</h3>
+            <ul>
+              <li>頭が重く、モヤがかかった感覚</li>
+              <li>身体がだるく、集中できない</li>
+              <li>首・肩がガチガチに硬い</li>
+              <li>眠りが浅く、疲れが抜けない</li>
+            </ul>
+          </div>
+          <div class="ba-arrow">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </div>
+          <div class="ba-card ba-after">
+            <div class="ba-label">After</div>
+            <h3>施術後</h3>
+            <ul>
+              <li>頭が軽く、思考がクリアに</li>
+              <li>視界が明るく、身体が動きやすい</li>
+              <li>首・肩の緊張がスッと抜ける</li>
+              <li>深い睡眠で朝スッキリ目覚める</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ⑧ 施術者紹介 ===== -->
+    <section class="section" id="therapist">
+      <div class="container">
+        <h2 class="section-title fade-in">施術者紹介</h2>
+        <div class="therapist-card fade-in">
+          <div class="therapist-image">
+            <img src="./norio.jpg" alt="原口慶篤" loading="lazy">
+          </div>
+          <div class="therapist-info">
+            <h3>原口 慶篤<span class="name-reading">はらぐち のりあつ</span></h3>
+            <p class="therapist-titles">パーソナルトレーナー / 整体師 / コンディショニング講師</p>
+            <p class="therapist-desc">
+              11年以上にわたり、身体の不調やパフォーマンス向上に向き合い続け、<br>
+              西洋医学と東洋医学の両方を学び、<strong>「構造」「神経」「エネルギー」</strong>の3方向から分析する独自の施術を確立。
+            </p>
+            <p class="therapist-desc">
+              現在は大阪を拠点に、経営者・医療従事者・トレーナー・セラピストなど、身体を資本とする多くの方々のコンディショニングを担当。<br>
+              技術指導者として全国でセミナーや講義も行い、多くの施術者の育成に携わる。
+            </p>
+            <div class="expertise-tags">
+              <span class="tag">解剖学</span>
+              <span class="tag">運動学</span>
+              <span class="tag">神経学</span>
+              <span class="tag">カイロプラクティック</span>
+              <span class="tag">オステオパシー</span>
+              <span class="tag">経絡（東洋医学）</span>
+              <span class="tag">内臓アプローチ</span>
+              <span class="tag">頭蓋骨アプローチ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ⑨ 料金 ===== -->
+    <section class="section section-dark" id="pricing">
+      <div class="container">
+        <h2 class="section-title fade-in">料金</h2>
+        <div class="pricing-card fade-in">
+          <div class="pricing-label">Head Therapy</div>
+          <h3>ヘッドセラピー</h3>
+          <div class="pricing-prices">
+            <div class="pricing-regular">
+              <span class="pricing-label-sm">通常価格</span>
+              <span class="pricing-old">¥8,800</span>
+            </div>
+            <div class="pricing-arrow-down">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            </div>
+            <div class="pricing-special">
+              <span class="pricing-label-sm">初回限定価格</span>
+              <span class="pricing-new">¥5,500<small>（税込）</small></span>
+            </div>
+          </div>
+          <ul class="pricing-includes">
+            <li>カウンセリング込み</li>
+            <li>所要時間 30〜60分</li>
+            <li>着替え不要</li>
+            <li>セルフケア提案付き</li>
           </ul>
-          <div class="offer-cta">
-            <a class="btn btn-primary btn-lg" href="#reserve">初回の空き枠を確認する</a>
-          </div>
+          <a href="https://liff.line.me/2006566038-zQdLGm6N?calendar_salon_id=12280&ts=1772782813" target="_blank" class="btn btn-primary btn-lg pulse">初回限定で予約する</a>
         </div>
       </div>
     </section>
 
-    <section id="flow" class="section alt">
+    <!-- ===== ⑩ よくある質問 ===== -->
+    <section class="section" id="faq">
       <div class="container">
-        <h2>施術の流れ</h2>
-        <ol class="flow" aria-label="施術の流れ">
-          <li>
-            <h4>カウンセリング</h4>
-            <p>生活・仕事リズムや睡眠状況、体の不調箇所を把握し、目的を明確化します。</p>
-          </li>
-          <li>
-            <h4>コンディションチェック</h4>
-            <p>姿勢・可動・反応などを確認。脳疲労の兆候や身体の張力バランスを見極めます。</p>
-          </li>
-          <li>
-            <h4>施術</h4>
-            <p>脳と体の両面にアプローチ。力任せにせず、必要な部位にピンポイントで働きかけます。</p>
-          </li>
-          <li>
-            <h4>セルフケア提案</h4>
-            <p>日常で続けられるシンプルなケアやルーティンをご提案。効果の持続をサポートします。</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section id="therapist" class="section alt">
-      <div class="container">
-        <h2>施術者紹介</h2>
-        <div class="therapist-profile">
-          <div class="profile-image">
-            <img src="./norio.jpg" alt="原口慶篤 - ヘッドコンディショニング専門家" loading="lazy">
-          </div>
-          <div class="profile-content">
-            <h3>原口 慶篤（はらぐち のりあつ）</h3>
-            <p class="profile-title">パーソナルトレーナー / 整体師 / コンディショニング講師</p>
-            <p class="profile-birth">1996年1月20日 守口市生まれ</p>
-            
-            <div class="profile-intro">
-              <p>これまで11年以上にわたり、身体の不調やパフォーマンス向上に向き合い続けてきました。</p>
-              <p>これまでに学んできたのは、トレーニング理論だけではありません。</p>
-            </div>
-            
-            <div class="expertise">
-              <h4>学んできた分野</h4>
-              <ul class="expertise-list" role="list">
-                <li>解剖学</li>
-                <li>運動学</li>
-                <li>神経学</li>
-                <li>カイロプラクティック</li>
-                <li>オステオパシー</li>
-                <li>経絡（東洋医学）</li>
-                <li>内臓アプローチ</li>
-                <li>頭蓋骨アプローチ</li>
-              </ul>
-            </div>
-            
-            <div class="approach">
-              <h4>独自の施術アプローチ</h4>
-              <p>西洋医学と東洋医学の両方を学び、身体を<strong>「構造」「神経」「エネルギー」</strong>の3方向から分析する独自の施術を行っています。</p>
-            </div>
-            
-            <div class="clinical-experience">
-              <h4>臨床経験からの発見</h4>
-              <p>私はこれまで多くの方の身体を見てきましたが、慢性的な不調の多くは「痛い場所」ではなく、<strong>脳・神経・頭部</strong>に原因があることが少なくありません。</p>
-              
-              <p>頭部は、自律神経、ホルモン、思考、ストレス、睡眠、姿勢、筋肉の緊張すべてをコントロールする「司令塔」です。</p>
-              
-              <p>この頭部と頸椎を整えることで、慢性的な疲労、頭痛、睡眠の質、集中力、身体のパフォーマンスが大きく変わるケースを数多く見てきました。</p>
-            </div>
-            
-            <div class="current-work">
-              <h4>現在の活動</h4>
-              <p>現在は大阪を拠点に、経営者、医療従事者、トレーナー、セラピストなど、身体を資本とする多くの方々のコンディショニングを担当しています。</p>
-              <p>また、技術指導者として全国でセミナーや講義も行い、多くの施術者・トレーナーの育成にも携わっています。</p>
-            </div>
-            
-            <div class="philosophy">
-              <h4>目指していること</h4>
-              <p><strong>「脳と身体を守るコンディショニング」</strong></p>
-              <p>日々忙しく働く人ほど、知らないうちに脳や神経に大きな負担がかかっています。</p>
-              <p>だからこそ、身体だけでなく脳・神経から整えるコンディショニングを通して、本来のパフォーマンスを取り戻すサポートをしています。</p>
-            </div>
-          </div>
+        <h2 class="section-title fade-in">よくある質問</h2>
+        <div class="faq-list">
+          <details class="faq-item fade-in">
+            <summary>施術は痛くないですか？</summary>
+            <p>力任せに押したり揉んだりする施術ではありません。繊細なタッチで頭蓋骨・頸椎・神経にアプローチしますので、痛みはほとんどありません。多くの方が施術中に眠ってしまうほどです。</p>
+          </details>
+          <details class="faq-item fade-in">
+            <summary>どれくらいの時間がかかりますか？</summary>
+            <p>初回はカウンセリング含め約60分、2回目以降は30〜45分が目安です。</p>
+          </details>
+          <details class="faq-item fade-in">
+            <summary>着替えは必要ですか？</summary>
+            <p>基本的に着替え不要です。動きやすい服装でお越しください。</p>
+          </details>
+          <details class="faq-item fade-in">
+            <summary>どれくらいの頻度で通えば良いですか？</summary>
+            <p>まずは初回で状態を拝見し、目的に合わせてご提案します。目安は2〜4週間に1回です。</p>
+          </details>
+          <details class="faq-item fade-in">
+            <summary>どんな人が通っていますか？</summary>
+            <p>経営者、デスクワーカー、医療従事者、トレーナーなど、脳を酷使する仕事の方が多く来院されています。</p>
+          </details>
         </div>
       </div>
     </section>
 
-    <section id="pricing" class="section">
+    <!-- ===== アクセス ===== -->
+    <section class="section section-dark" id="access">
       <div class="container">
-        <h2>料金プラン</h2>
-        <div class="pricing-box">
-          <div class="plan">
-            <h3>ヘッドセラピー</h3>
-            <div class="price">
-              <span class="amount">￥5,500</span>
-              <span class="unit">単発</span>
-            </div>
-            <p class="plan-description">頭蓋骨・頸椎・神経の働きを整え、身体と脳のバランスを取り戻す施術</p>
-            <ul class="plan-features" role="list">
-              <li>カウンセリング含む</li>
-              <li>所要時間：30〜60分</li>
-              <li>着替え不要</li>
-              <li>セルフケア提案付き</li>
-            </ul>
-            <div class="plan-cta">
-              <a class="btn btn-primary" href="#reserve">今すぐ予約する</a>
-            </div>
+        <h2 class="section-title fade-in">アクセス</h2>
+        <div class="access-grid fade-in">
+          <div class="access-info">
+            <dl class="access-dl">
+              <dt>施設名</dt>
+              <dd>TOTAL BODY FITNESS THEORY</dd>
+              <dt>住所</dt>
+              <dd>〒562-0004 大阪府箕面市如意谷1-6-7</dd>
+              <dt>最寄り駅</dt>
+              <dd>箕面萱野駅から徒歩15分</dd>
+              <dt>営業時間</dt>
+              <dd>9:00〜21:00（完全予約制）</dd>
+              <dt>定休日</dt>
+              <dd>不定休</dd>
+              <dt>駐車場</dt>
+              <dd>近隣の有料駐車場をご利用ください</dd>
+            </dl>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="head-therapy" class="section alt">
-      <div class="container">
-        <h2>ヘッドコンディショニングとは</h2>
-        <div class="therapy-intro">
-          <p>その臨床経験から生まれたのが<strong>ヘッドコンディショニング</strong>です。</p>
-          <p>頭蓋骨・頸椎・神経の働きを整え、身体と脳のバランスを取り戻すことで、「ただのリラクゼーション」ではなく身体が本来持っている回復力を引き出す施術を提供しています。</p>
-        </div>
-        
-        <div class="why-needed">
-          <h3>なぜヘッドセラピーが必要なのか</h3>
-          <p>現代社会では、多くの人が常に脳を使い続けています。スマートフォン、パソコン、情報過多の環境、仕事のプレッシャー。私たちの脳と神経は、想像以上に疲労しています。</p>
-          
-          <p>しかし、その疲労は肩こり、首こり、頭痛、眼精疲労、睡眠の質の低下、集中力の低下、慢性的な疲労感といった形で、身体に現れることがほとんどです。</p>
-          
-          <div class="insight-box">
-            <p><strong>つまり多くの場合、身体の不調の原因は身体ではなく「脳と神経」にあります。</strong></p>
-          </div>
-          
-          <p>脳は身体全体をコントロールする司令塔です。自律神経、ホルモンバランス、筋肉の緊張、姿勢、回復力、思考や集中力。これらはすべて、脳と神経の働きによって調整されています。</p>
-          
-          <p>しかし、脳や神経は日常生活の中で休ませる機会がほとんどありません。その結果、脳が常に緊張状態になり、身体は回復できない状態に入ってしまいます。</p>
-          
-          <div class="therapy-definition">
-            <h4>ヘッドセラピーとは</h4>
-            <p>頭蓋骨、頸椎、神経この3つにアプローチすることで、脳の緊張を解放し、身体本来の回復力を取り戻す施術です。</p>
-            <p>ただ頭をほぐすだけのリラクゼーションではなく、脳と神経のバランスを整え、身体全体のコンディションを引き上げることを目的としています。</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="recommended" class="section">
-      <div class="container">
-        <h2>このような方におすすめです</h2>
-        <div class="recommendation-grid">
-          <div class="recommendation-card">
-            <div class="card-icon">🧠</div>
-            <h3>脳を酷使している方</h3>
-            <ul class="recommendation-list" role="list">
-              <li>仕事で常に考え続けている</li>
-              <li>集中力を高く保ちたい</li>
-              <li>脳の疲労を感じる</li>
-            </ul>
-            <p>経営者や管理職、クリエイティブな仕事をしている方ほど脳のコンディションがパフォーマンスに直結します。</p>
-          </div>
-          
-          <div class="recommendation-card">
-            <div class="card-icon">😴</div>
-            <h3>慢性的な疲労を感じている方</h3>
-            <ul class="recommendation-list" role="list">
-              <li>寝ても疲れが取れない</li>
-              <li>身体が常に重い</li>
-              <li>回復力が落ちている</li>
-            </ul>
-            <p>これは自律神経が乱れているサインの可能性があります。</p>
-          </div>
-          
-          <div class="recommendation-card">
-            <div class="card-icon">🌙</div>
-            <h3>睡眠の質を高めたい方</h3>
-            <ul class="recommendation-list" role="list">
-              <li>眠りが浅い</li>
-              <li>夜中に目が覚める</li>
-              <li>朝スッキリ起きられない</li>
-            </ul>
-            <p>頭部と頸椎を整えることで自律神経のバランスが整い、睡眠の質が改善するケースが多くあります。</p>
-          </div>
-          
-          <div class="recommendation-card">
-            <div class="card-icon">💆</div>
-            <h3>首・肩・頭の不調がある方</h3>
-            <ul class="recommendation-list" role="list">
-              <li>肩こり</li>
-              <li>首こり</li>
-              <li>頭痛</li>
-              <li>眼精疲労</li>
-              <li>顎の緊張</li>
-            </ul>
-            <p>これらの症状は、頭部の緊張や神経のストレスが原因となっていることも少なくありません。</p>
-          </div>
-          
-          <div class="recommendation-card">
-            <div class="card-icon">🎯</div>
-            <h3>身体のパフォーマンスを上げたい方</h3>
-            <ul class="recommendation-list" role="list">
-              <li>トレーニングの質を上げたい</li>
-              <li>身体をベストな状態に保ちたい</li>
-              <li>仕事のパフォーマンスを高めたい</li>
-            </ul>
-            <p>脳と神経が整うことで、身体の動きや回復力も大きく変わります。</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="therapy-goal" class="section alt emphasize">
-      <div class="container">
-        <h2>ヘッドセラピーが目指すもの</h2>
-        <div class="goal-content">
-          <p>私が目指しているのは、<strong>「ただ気持ちいい施術」</strong>ではありません。</p>
-          <p>脳と身体を整え、本来のパフォーマンスを取り戻すこと。</p>
-          
-          <p>忙しく働く人ほど、脳と神経のケアは必要です。</p>
-          
-          <div class="goal-statement">
-            <h3>ヘッドセラピーを通して、</h3>
-            <p><strong>脳と身体のコンディションを整える新しい習慣</strong></p>
-            <p>を提供しています。</p>
-          </div>
-          
-          <div class="goal-cta">
-            <a class="btn btn-primary btn-lg" href="#reserve">まずは体験してみる</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="hours" class="section">
-      <div class="container">
-        <h2>営業情報</h2>
-        <div class="info">
-          <dl>
-            <dt>施設名</dt>
-            <dd>TOTAL BODY FITNESS THEORY</dd>
-            <dt>所在地</dt>
-            <dd>〒562-0004 大阪府箕面市如意谷1-6-7</dd>
-            <dt>営業時間</dt>
-            <dd>9:00〜21:00（完全予約制）</dd>
-            <dt>定休日</dt>
-            <dd>不定休</dd>
-          </dl>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt" id="voices">
-      <div class="container">
-        <h2>お客様の声</h2>
-        <div class="grid-3">
-          <div class="card">
-            <p>「頭の霧が晴れて、その日の午後から作業スピードが上がりました。」</p>
-            <small>30代・デスクワーク</small>
-          </div>
-          <div class="card">
-            <p>「首肩の重さが軽くなり、夜ぐっすり眠れました。」</p>
-            <small>40代・子育て中</small>
-          </div>
-          <div class="card">
-            <p>「短時間でも体が整う感じ。隙間時間に通えるのが助かる。」</p>
-            <small>20代・営業職</small>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="access" class="section alt">
-      <div class="container">
-        <h2>アクセス</h2>
-        <div class="grid-2">
-          <div>
-            <ul class="list" role="list">
-              <li><strong>最寄駅：</strong>箕面萱野駅から徒歩15分</li>
-              <li><strong>住所：</strong>大阪府箕面市如意谷1-6-7</li>
-              <li><strong>駐車場：</strong>近隣の有料駐車場をご利用ください（施設専用駐車場はございません）</li>
-            </ul>
-            <p class="note">※道順や最寄りのコインパーキングのご案内が必要な方は、予約時にお申し付けください。</p>
-          </div>
-          <div class="map-wrap">
-            <iframe title="TOTAL BODY FITNESS THEORY 地図" loading="lazy" allowfullscreen
-              referrerpolicy="no-referrer-when-downgrade"
+          <div class="access-map">
+            <iframe title="地図" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
               src="https://www.google.com/maps?q=%E5%A4%A7%E9%98%AA%E5%BA%9C%E7%AE%95%E9%9D%A2%E5%B8%82%E5%A6%82%E6%84%8F%E8%B0%B71-6-7&output=embed"></iframe>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="faq">
-      <div class="container">
-        <h2>よくあるご質問</h2>
-        <div class="faq">
-          <details>
-            <summary>着替えは必要ですか？</summary>
-            <p>基本的に着替え不要です。動きやすい服装でお越しください。</p>
-          </details>
-          <details>
-            <summary>どれくらいの頻度で通えば良いですか？</summary>
-            <p>まずは初回で状態を拝見し、目的に合わせてご提案します。目安は2〜4週間に1回です。</p>
-          </details>
-          <details>
-            <summary>支払い方法は？</summary>
-            <p>現金のほか、各種キャッシュレスに順次対応予定です。詳細は予約時にご確認ください。</p>
-          </details>
-        </div>
+    <!-- ===== ⑪ 最終CTA ===== -->
+    <section class="section-final-cta" id="reserve">
+      <div class="container final-cta-inner">
+        <p class="final-cta-label fade-in">Neuro Conditioning</p>
+        <h2 class="final-cta-title fade-in">今すぐ<br class="sp-only">体験してください。</h2>
+        <p class="final-cta-sub fade-in">脳と身体を整え、本来のパフォーマンスを取り戻す。</p>
+        <a href="https://liff.line.me/2006566038-zQdLGm6N?calendar_salon_id=12280&ts=1772782813" target="_blank" class="btn btn-white btn-lg pulse fade-in">予約する</a>
       </div>
     </section>
 
-    <section id="reserve" class="section emphasize">
-      <div class="container reserve">
-        <h2>ご予約</h2>
-        <p>当施設は完全予約制です。下記よりご予約ください。</p>
-        <div class="reserve-actions">
-          <a class="btn btn-primary btn-lg" href="https://liff.line.me/2006566038-zQdLGm6N?calendar_salon_id=12280&ts=1772782813" target="_blank">LINEで予約する</a>
-        </div>
-      </div>
-    </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer">
     <div class="container">
-      <small>© <span id="y"></span> TOTAL BODY FITNESS THEORY</small>
+      <small>&copy; <span id="y"></span> TOTAL BODY FITNESS THEORY</small>
     </div>
   </footer>
 
-  <div class="sticky-cta">
-    <a class="btn btn-primary" href="https://liff.line.me/2006566038-zQdLGm6N?calendar_salon_id=12280&ts=1772782813" target="_blank">LINEで予約</a>
+  <!-- Sticky CTA (Mobile) -->
+  <div class="sticky-cta" id="stickyCta">
+    <a href="https://liff.line.me/2006566038-zQdLGm6N?calendar_salon_id=12280&ts=1772782813" target="_blank" class="btn btn-primary">LINEで予約する</a>
   </div>
 
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Hamburger
+    const ham = document.getElementById('hamburger');
+    const nav = document.getElementById('headerNav');
+    ham.addEventListener('click', () => {
+      ham.classList.toggle('active');
+      nav.classList.toggle('open');
+    });
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      ham.classList.remove('active');
+      nav.classList.remove('open');
+    }));
+
+    // Fade-in on scroll
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }});
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+    // Sticky CTA show after scroll
+    const sticky = document.getElementById('stickyCta');
+    window.addEventListener('scroll', () => {
+      sticky.classList.toggle('show', window.scrollY > 600);
+    });
+
+    // Neural network canvas animation
+    (function() {
+      const canvas = document.getElementById('neuroCanvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      let w, h, particles = [], connections = [];
+
+      function resize() {
+        w = canvas.width = canvas.offsetWidth;
+        h = canvas.height = canvas.offsetHeight;
+      }
+      resize();
+      window.addEventListener('resize', resize);
+
+      const count = Math.min(60, Math.floor(w * h / 15000));
+      for (let i = 0; i < count; i++) {
+        particles.push({
+          x: Math.random() * w, y: Math.random() * h,
+          vx: (Math.random() - 0.5) * 0.4, vy: (Math.random() - 0.5) * 0.4,
+          r: Math.random() * 2 + 1
+        });
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, w, h);
+        particles.forEach(p => {
+          p.x += p.vx; p.y += p.vy;
+          if (p.x < 0 || p.x > w) p.vx *= -1;
+          if (p.y < 0 || p.y > h) p.vy *= -1;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(58,134,255,0.5)';
+          ctx.fill();
+        });
+        for (let i = 0; i < particles.length; i++) {
+          for (let j = i + 1; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < 150) {
+              ctx.beginPath();
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.strokeStyle = `rgba(58,134,255,${0.15 * (1 - dist / 150)})`;
+              ctx.lineWidth = 0.5;
+              ctx.stroke();
+            }
+          }
+        }
+        requestAnimationFrame(draw);
+      }
+      draw();
+    })();
   </script>
 </body>
 </html>
